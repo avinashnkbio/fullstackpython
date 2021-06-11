@@ -1,0 +1,12 @@
+https://github.com/TotallyInformation/node-red-contrib-uibuilder/wiki/Integrating-ApexCharts-with-VueJS
+https://github.com/TotallyInformation/node-red-contrib-uibuilder/wiki/Integrating-Vue-ECharts
+
+https://www.e-tinkers.com/2019/02/a-node-red-inspired-d3-dashboard-gauge/
+
+https://github.com/TotallyInformation/node-red-contrib-uibuilder/wiki/Integrating-ApexCharts-with-VueJS
+
+https://apexcharts.com/docs/vue-charts/
+
+https://www.tsmean.com/articles/mustache/the-ultimate-mustache-tutorial/
+
+https://diyprojects.io/node-red-dashboard-gauges-charts-notifications-html/#.YJpiGbUzZdg

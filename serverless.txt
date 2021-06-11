@@ -1,0 +1,22 @@
+https://blog.miguelgrinberg.com/post/serverless-deployments-of-python-apis
+
+https://cloudacademy.com/blog/microsoft-azure-functions-vs-google-cloud-functions-fight-for-serverless-cloud-domination-continues/
+
+https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
+
+https://cloud.google.com/functions/docs/concepts/python-runtime
+
+What do you mean by DevOps?
+DevOps (a portmanteau of “development” and “operations”) is the combination of practices and tools designed to increase an organization's ability to deliver applications and services faster than traditional software development processes.
+
+https://devops.com/
+A service-level agreement is a commitment between a service provider and a client. Particular aspects of the service – quality, availability, responsibilities – are agreed between the service provider and the service user.
+
+https://azure.microsoft.com/en-us/support/legal/sla/functions/v1_1/
+
+https://martinfowler.com/articles/serverless.html
+
+Introduction to Severless and AWS Lambda
+If you follow my tutorials, you have heard me talk about Heroku a few times. This is a so called platform as a service offering, or PaaS. With this service, you can upload your HTTP server application to Heroku using git push. The instructions on how to start the server are given in a Procfile. Heroku then runs your server and forwards HTTP requests to it.
+
+CRUD:In computer programming, create, read, update, and delete are the four basic operations of persistent storage. Alternate words are sometimes used when defining the four basic operations of CRUD, such as construct instead of create, retrieve instead of read, or destroy or destruct instead of delete

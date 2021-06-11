@@ -1,0 +1,5 @@
+INFO:root:Informational message
+ERROR:root:An error has happened!
+INFO:root:Informational message
+ERROR:root:An error has happened!
+WARNING:root:This will get logged to a file

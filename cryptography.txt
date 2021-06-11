@@ -1,0 +1,84 @@
+>>> from cryptography.fernet import Fernet
+>>> # Put this somewhere safe!
+>>> key = Fernet.generate_key()
+>>> f = Fernet(key)
+>>> token = f.encrypt(b"A really secret message. Not for prying eyes.")
+>>> token
+b'...'
+>>> f.decrypt(token)
+b'A really secret message. Not for prying eyes.'
+https://cryptography.io/en/latest/
+
+https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_modules_of_cryptography.htm
+
+
+from cryptography.fernet import Fernet
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+cipher_text = cipher_suite.encrypt("This example is used to demonstrate cryptography module")
+plain_text = cipher_suite.decrypt(cipher_text)
+
+
+import uuid
+import hashlib
+
+def hash_password(password):
+   # uuid is used to generate a random number of the specified password
+   salt = uuid.uuid4().hex
+   return hashlib.sha256(salt.encode() + password.encode()).hexdigest() + ':' + salt
+
+def check_password(hashed_password, user_password):
+   password, salt = hashed_password.split(':')
+   return password == hashlib.sha256(salt.encode() + user_password.encode()).hexdigest()
+
+new_pass = input('Please enter a password: ')
+hashed_password = hash_password(new_pass)
+print('The string to store in the db is: ' + hashed_password)
+old_pass = input('Now please enter the password again to check: ')
+
+if check_password(hashed_password, old_pass):
+   print('You entered the right password')
+else:
+   print('Passwords do not match')
+
+
+https://www.codespeedy.com/rsa-algorithm-an-asymmetric-key-encryption-in-python/
+
+https://www.geeksforgeeks.org/rsa-algorithm-cryptography/
+
+https://gist.github.com/djego/97db0d1bc3d16a9dcb9bab0930d277ff
+
+https://sites.psu.edu/gottiparthyanirudh/writing-sample-3/
+
+http://www.gecidukki.ac.in/Department/departmentDetail.aspx?linkId=10&linkLvl1Id=10&dptId=5&dptLnkId=13
+
+http://kongunadu.ac.in/faculty-members-it/itemlist/category/43-kongunadu-department-information-technology.html
+
+System Design for a Synergistic, Low Power
+Mote/BLE Embedded Platform
+Michael P Andersen∗
+, Gabe Fierro†
+, David E. Culler‡
+Electrical Engineering and Computer Science, UC Berkeley
+Email: ∗m.andersen@cs.berkeley.edu, †gtfierro@cs.berkeley.edu, ‡
+culler@cs.berkeley.edu,
+
+
+
+>>> import base64
+>>> import os
+>>> from cryptography.fernet import Fernet
+>>> from cryptography.hazmat.primitives import hashes
+>>> from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+>>> password = b"password"
+>>> salt = os.urandom(16)
+>>> kdf = PBKDF2HMAC(
+...     algorithm=hashes.SHA256(),
+...     length=32,
+...     salt=salt,
+...     iterations=100000,
+... )
+>>> key = base64.urlsafe_b64encode(kdf.derive(password))
+>>> f = Fernet(key)
+>>> token = f.encrypt(b"Secret message!")
+>>> token

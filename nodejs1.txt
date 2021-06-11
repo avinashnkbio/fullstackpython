@@ -1,0 +1,14 @@
+https://www.javatpoint.com/expressjs-tutorial
+
+https://www.tutorialspoint.com/nodejs/nodejs_first_application.htm
+
+https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
+
+
+https://www.tutorialspoint.com/nodejs/nodejs_restful_api.htm
+
+https://www.tutorialspoint.com/nodejs/nodejs_web_module.htm
+
+https://expressjs.com/en/starter/generator.html
+
+https://kubernetes.io/docs/setup/

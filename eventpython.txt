@@ -1,0 +1,11 @@
+https://www.freeprojectz.com/paid-project/python-django-mysql-project/online-grocery-store-mini-project
+
+https://towardsdatascience.com/scheduling-all-kinds-of-recurring-jobs-with-python-b8784c74d5dc
+
+https://bhupesh-v.github.io/A-Simple-Scheduler-in-Python/
+
+https://www.geeksforgeeks.org/python-schedule-library/
+
+https://www.topcoder.com/thrive/articles/task-scheduling-with-python
+
+https://www.tutorialspoint.com/event-scheduler-in-python
